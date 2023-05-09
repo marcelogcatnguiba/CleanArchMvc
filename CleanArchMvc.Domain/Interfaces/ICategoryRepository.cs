@@ -7,7 +7,7 @@ namespace CleanArchMvc.Domain.Interfaces
     {
         // Task representa uma operacao assincrona
         //Busca de categorias
-        Task<IEnumerable<Category>> GetCategoriesAsync(); // Lista de categorias
+        Task<IEnumerable<Category>> GetCategoryAsync(); // Lista de categorias
         Task<Category> GetByIDAsync(int? id); // Uma categoria somente
 
         Task<Category> CreateAsync(Category category);
