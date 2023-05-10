@@ -22,4 +22,4 @@ namespace CleanArchMvc.Infra.IoC
             return services;
         }
     }
-}
+} 
