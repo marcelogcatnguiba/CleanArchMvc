@@ -6,11 +6,11 @@ using CleanArchMvc.Domain.Interfaces;
 
 namespace CleanArchMvc.Application.Services
 {
-    public class ProductService : IProductServices
+    public class ProductServices : IProductServices
     {
         private IProductRepository _productRepository;
         private IMapper _mapper;
-        public ProductService(IProductRepository productRepository, IMapper mapper)
+        public ProductServices(IProductRepository productRepository, IMapper mapper)
         {
             _productRepository = productRepository;
             _mapper = mapper;
