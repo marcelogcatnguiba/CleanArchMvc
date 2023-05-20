@@ -16,5 +16,7 @@ namespace CleanArchMvc.WebUI.Controllers.Categories
             var categories = await _categoryServices.GetCategoriesAsync();
             return View(categories);
         }
+
+
     }
 }
