@@ -1,10 +1,8 @@
-using CleanArchMvc.Infra.Data.Context;
 using CleanArchMvc.Infra.IoC;
-using Microsoft.AspNetCore.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 var myHandlers = AppDomain.CurrentDomain.Load("CleanArchMvc.Application");
-builder.Services.AddMediatR(cfg => { cfg.RegisterServicesFromAssemblies(assemblies : myHandlers); });
+builder.Services.AddMediatR(cfg => { cfg.RegisterServicesFromAssemblies(assemblies: myHandlers); });
 builder.Services.AddInfrastructure(builder.Configuration);
 // Add services to the container.
 
